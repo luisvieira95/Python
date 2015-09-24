@@ -1,0 +1,23 @@
+# miscelaniadepython
+Exercício de principiante na linguagem python
+
+'''CALCULO DO IMC DE UM PESSOA E O SEU PESO IDEAL'''
+
+genero = input('Você e homem ou mulher? ')
+a = float(input('Insira sua altura: '))
+b = float(input('Insira seu peso: '))
+imc = b / (a ** 2)
+if genero in 'homem':
+    pih = (73 * a)
+    ph = (pih - 58)
+    print('Seu peso ideal é %.d kg' %ph)
+
+if genero in 'mulher':
+   pim = (62 * a)
+   pm = (pim - 45)
+   print('Seu peso ideal é %d kg' %pm)
+
+print('Seu IMC é: %.2f' %imc)
+
+
+
