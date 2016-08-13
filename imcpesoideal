@@ -1,7 +1,8 @@
 # miscelaniadepython
 Exercício de principiante na linguagem python
 
-'''CALCULO DO IMC DE UM PESSOA E O SEU PESO IDEAL'''
+#CALCULO DO IMC DE UM PESSOA E O SEU PESO IDEAL
+
 
 genero = input('Você e homem ou mulher? ')
 a = float(input('Insira sua altura: '))
