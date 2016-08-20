@@ -1,0 +1,105 @@
+#EXERCICIO I
+
+a = float(input("T1: "))
+b = float(input("T2: "))
+c = float(input("T3: "))
+if a > (b + c) or b > (a + c) or c > (a + b):
+    print("Não forma um triangulo")
+elif a == b == c:
+    print("equilátero")
+elif a == b or a == c or b == c:
+    print('isosceles')
+else:
+    print("escaleno")
+
+#EXERCICIO II
+
+a = int(input("ANO: "))
+if a % 4 != 0:
+    print("Não é bissexto")
+else:
+    a = str(a)
+    if a[3] + a[2] == '00':
+        if a % 400 == 0:
+            print('É bissexto')
+        else:
+            print('Não é bissexto')
+    if a[2] + a[3] != '00':
+        print("É bissexto")
+        
+#EXERCICIO III        
+        
+peixes = float(input("Kg de peixes: "))
+if peixes <= 50:
+    excesso = 0
+    multa = 0
+    print('Multa: %d' %multa)
+    print('Excesso: %d' %excesso)
+else:
+    excesso = peixes - 50
+    multa = 4 * excesso
+    print('Multa R$ %.2f' %multa)
+    print('Excesso: %.3f kg' %excesso)
+
+#EXERCICIO IV
+
+numeros = []
+c = 1
+while c <= 3:
+    add = float(input("Adicione um numero: "))
+    numeros.append(add)
+    c+=1
+print(max(numeros))
+
+#EXERCICIO V
+
+numeros = []
+c = 1
+while c <= 3:
+    add = float(input("Adicione um numero: "))
+    numeros.append(add)
+    c+=1
+print("Maior: ", max(numeros))
+print("Menor: ", min(numeros))
+
+#EXERCICIO VI
+
+ganhaPorHora = float(input("Quanto ganha por hora: "))
+horasTrampadas = int(input("Horas trabalhadas no mês: "))
+salarioBruto = ganhaPorHora * horasTrampadas
+ir = (salarioBruto * 11) / 100
+inss = (salarioBruto * 8) / 100 
+sindicato = (salarioBruto * 5) / 100
+salarioLiquido = salarioBruto - ir - inss - sindicato
+print("Salário bruto: %.2f" %salarioBruto)
+print("IR: %.2f" %ir)
+print("INSS: %.2F" %inss)
+print("Sindicato: %.2f" %sindicato)
+print("Salario liquido: %.2f" %salarioLiquido)
+
+#EXERCICIO VII
+
+metros = int(input("Area a ser pintada: "))
+if metros % 3 == 0:
+    litros = metros  / 3
+    latas = litros / 18
+    preço = latas * 80
+    if latas <= 0:
+        latas = 1
+        preço = latas * 80
+    print("Preço: %.2f" %preço)
+    print("Latas: %d" %latas)
+else:
+    litros = metros / 3
+    latas = litros / 18
+    latasc = int(latas) + 1
+    preço = latasc * 80
+    if latas <= 0:
+        latas = 1
+        preço = latas * 80
+        print("Preço: %.2f" %preço)
+        print("Latas: %d" %latas)
+    print("Preço: %.2f" %preço)
+    print("Latas: %d" %latasc)
+
+  
